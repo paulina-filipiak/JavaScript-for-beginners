@@ -1,4 +1,4 @@
-var myAge = 9;
+var myAge = 3;
 
 if (myAge > 30){
     document.write("You are over 30!");
@@ -12,6 +12,6 @@ else if (myAge > 10){
     document.write("You are over 10!");
 }
 
-else if (myAge < 10){
+else {
     document.write("You are not over 10!");
 }
