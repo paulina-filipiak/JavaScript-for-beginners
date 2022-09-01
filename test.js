@@ -1,13 +1,10 @@
-function getAverage (a,b){
-    var average = (a + b) / 2;
-    console.log(average);
-    return average;
+var a = 2;
+var b = 5;
+
+if (isNaN(a)) {
+    console.log("This is not a number");
 }
 
-var myResult = getAverage(5,8);
-
-function logResult(){
-    console.log("the average is " + myResult);
+else {
+    console.log("blabla")
 }
-
-logResult();
