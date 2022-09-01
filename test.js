@@ -1,8 +1,20 @@
-var myString = "Hello there ninja!";
+var myArray = new Array()
 
-if (myString.indexOf("ninja") === -1) {
-    console.log("The word ninja is not in the string");
-}
-else{
-    console.log("the word ninja starts at position " + myString.indexOf("ninja"));
-}
+myArray[0] = 8;
+myArray[1] = "hello";
+
+var myCar = new Object();
+myCar.maxSpeed = 50;
+myCar.driver = "Paulina"
+myCar.drive = function(){console.log("now driving");};
+myCar.drive();
+
+console.log(myCar.driver);
+
+
+var myCar2 = {
+    maxSpeed: 70, 
+    driver: "Hela", 
+    drive: function(){console.log("driving again");}};
+
+console.log(myCar2.maxSpeed);
