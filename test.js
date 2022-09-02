@@ -1,20 +1,21 @@
-var myArray = new Array()
+var Car = function(maxSpeed, driver){
+    this.maxSpeed = maxSpeed;
+    this.driver = driver;
+    this.drive = function(speed, time){
+        console.log(speed * time) ;
+    };
+    this.logDriver = function(){
+        console.log("driver name is " + this.driver);
+    };
+}
 
-myArray[0] = 8;
-myArray[1] = "hello";
+var myCar = new Car(70, "Bartek");
+var myCar2 = new Car(60, "Paweł");
+var myCar3 = new Car(90, "Krzysiek");
+var myCar4 = new Car(20, "lalala");
 
-var myCar = new Object();
-myCar.maxSpeed = 50;
-myCar.driver = "Paulina"
-myCar.drive = function(){console.log("now driving");};
-myCar.drive();
+myCar.drive(30,5);
 
-console.log(myCar.driver);
+myCar4.logDriver();
 
 
-var myCar2 = {
-    maxSpeed: 70, 
-    driver: "Hela", 
-    drive: function(){console.log("driving again");}};
-
-console.log(myCar2.maxSpeed);
