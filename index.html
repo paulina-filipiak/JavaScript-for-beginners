@@ -9,12 +9,23 @@
 </head>
 
 <body>
-    <div id="message">
-        <p>This is really importatnt notifcation</p>
-        <p>blah blah</p>
-    </div>
+<form id="my-form" name="myForm" action="#">
+    <label for="name">Name:</label>
+    <input type="text" name="name"><br/>
+    <label>Hobbies:</label><br/>
+    <input type="checkbox" name="biking" value="biking">Biking<br/>
+    <input type="checkbox" name="skiing" value="skiing">Skiing<br/>
+    <input type="checkbox" name="driving" value="driving">Driving<br/>
+    <label for="color">Fav color:</label>
+    <select name="color">
+        <option>Red</option>
+        <option>Blue</option>
+        <option>Green</option>
+    </select>
+    <input type="submit" name="submit" value="submit">
+    </form>
 
-    <div id="color-changer"></div>
+    <div id="message" style="color: red;"></div>
 
     <script src="test.js"></script>
 
